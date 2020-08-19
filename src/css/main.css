@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --heading-family: 'Poppins', sans-serif;
+    --background-color: hsl(257, 40%, 49%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    background-image: url('../../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100vw;
+    padding: 20px 0 10px 20px;
+}
+
+.header svg{
+    width: 40%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container{
+    width: 90%;
+}
+
+.main__container--image{
+    width: 100%;
+}
+
+.main__title{
+    padding-top: 40px;
+    font-family: var(--heading-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+    width: 80%;
+}
+
+.main__description{
+    padding-top: 20px;
+    width: 90%;
+    font-size: 18px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.main__button{
+    text-decoration: none;
+    color: var(--background-color);
+    background: #FFF;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+}
+.footer{
+    width: 35%;
+}
+
+.footer__list{
+    margin: 60px auto;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__list--item{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+}
+
+.footer__list--item a{
+    color: #FFF;
+}
+
+.footer__list--item a:hover{
+    color: black;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        background-image: url('../../images/bg-desktop.svg');
+        background-size: contain;
+        min-height: 100vh;
+    }
+
+    .header{
+        width: 30%;
+        margin: 1% 5%;
+    }
+
+    .main{
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main__container{
+        width: 130%;
+    }
+
+    .main__text{
+        padding-left: 40px;
+    }
+
+    .main__title, .main__description{
+        text-align: left;
+        margin: 0;
+    }
+
+    .main__title{
+        font-size: 35px;
+        width: 80%;
+    }
+
+    .main__button{
+        height: 50px;
+        width: 30%;
+        margin: 30px 0;
+    }
+
+    .footer{
+        margin-left: 70%;
+    }
+
+    .footer__list{
+        width: 50%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footer__list--item{
+        margin: 0 10px
+    }
+
+}
