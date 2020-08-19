@@ -126,6 +126,7 @@ li{
         background-image: url('../../images/bg-desktop.svg');
         background-size: contain;
         min-height: 100vh;
+        overflow: hidden;
     }
 
     .header{
